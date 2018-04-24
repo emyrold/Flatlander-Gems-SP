@@ -1,0 +1,50 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<record_update table="sys_ui_script">
+    <sys_ui_script action="INSERT_OR_UPDATE">
+        <active>true</active>
+        <description>***Why is gems in to places... here and in the widget?</description>
+        <global>false</global>
+        <name>x_172493_flatgems.gemStore</name>
+        <script><![CDATA[(function () {
+    var app = angular.module('gemStore', ['storeDirectives']);
+
+    app.controller('StoreController', function () {
+        this.products = gems;
+    });
+
+    app.controller('ReviewController', function () {
+        this.review = {};
+
+        this.addReview = function (product) {
+            this.review.createdOn = Date.now();
+            product.reviews.push(this.review);
+            this.review = {};
+
+        };
+    });
+
+    app.controller('GalleryController', function () {
+        this.imageIndex = 0;
+        this.currentImageChange = function (imageNumber) {
+            this.imageIndex = imageNumber || 0;
+        };
+    });
+
+
+})();]]></script>
+        <script_name>gemStore</script_name>
+        <sys_class_name>sys_ui_script</sys_class_name>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2018-04-24 03:09:45</sys_created_on>
+        <sys_id>04dfe69bdb659300796cdec0cf961978</sys_id>
+        <sys_mod_count>4</sys_mod_count>
+        <sys_name>x_172493_flatgems.gemStore</sys_name>
+        <sys_package display_value="Flatlander Gems SP" source="x_172493_flatgems">a1457f36db655300796cdec0cf96198d</sys_package>
+        <sys_policy/>
+        <sys_scope display_value="Flatlander Gems SP">a1457f36db655300796cdec0cf96198d</sys_scope>
+        <sys_update_name>sys_ui_script_04dfe69bdb659300796cdec0cf961978</sys_update_name>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2018-04-24 04:31:44</sys_updated_on>
+        <use_scoped_format>false</use_scoped_format>
+    </sys_ui_script>
+</record_update>

@@ -1,0 +1,82 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<record_update table="sys_ui_script">
+    <sys_ui_script action="INSERT_OR_UPDATE">
+        <active>true</active>
+        <description>catalog</description>
+        <global>false</global>
+        <name>x_172493_flatgems.storeDirectives</name>
+        <script><![CDATA[(function () {
+	var app = angular.module('storeDirectives', []);
+	
+	app.directive("catalog", function () {
+        return {
+            restrict: "E",
+            templateUrl: "x_172493_flatgems_catalog.do"
+        };
+    });
+	
+	app.directive("descriptions", function() {
+		return {
+			restrict: 'E',
+			templateUrl: "x_172493_flatgems_descriptions.do"
+		};
+	});
+	
+	app.directive("reviews", function() {
+		return {
+			restrict: 'E',
+			templateUrl: "x_172493_flatgems_reviews.do"
+		};
+	});
+	
+	app.directive("specs", function() {
+		return {
+			restrict:"A",
+			templateUrl: "x_172493_flatgems_specs.do"
+		};
+	});
+	
+	app.directive("productTabs", function() {
+		return {
+			restrict: "E",
+			templateUrl: "x_172493_flatgems_product-tabs.do",
+			controller: function() {
+				this.tab = 1;
+				
+				this.isSet = function(checkTab) {
+					return this.tab === checkTab;
+				};
+				
+				this.setTab = function(activeTab) {
+					this.tab = activeTab;
+				};
+			},
+			controllerAs: "tab"
+		};
+	});
+	
+	app.directive("gallery", function() {
+		return {
+			restrict: "E",
+			templateUrl: "x_172493_flatgems_gallery.do"
+		};
+	});
+	
+	
+})();]]></script>
+        <script_name>storeDirectives</script_name>
+        <sys_class_name>sys_ui_script</sys_class_name>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2018-04-24 03:07:20</sys_created_on>
+        <sys_id>bfcde69bdb659300796cdec0cf961973</sys_id>
+        <sys_mod_count>5</sys_mod_count>
+        <sys_name>x_172493_flatgems.storeDirectives</sys_name>
+        <sys_package display_value="Flatlander Gems SP" source="x_172493_flatgems">a1457f36db655300796cdec0cf96198d</sys_package>
+        <sys_policy/>
+        <sys_scope display_value="Flatlander Gems SP">a1457f36db655300796cdec0cf96198d</sys_scope>
+        <sys_update_name>sys_ui_script_bfcde69bdb659300796cdec0cf961973</sys_update_name>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2018-04-24 04:18:01</sys_updated_on>
+        <use_scoped_format>false</use_scoped_format>
+    </sys_ui_script>
+</record_update>

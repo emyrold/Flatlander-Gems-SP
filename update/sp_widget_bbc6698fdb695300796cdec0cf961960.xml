@@ -1,0 +1,40 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<record_update table="sp_widget">
+    <sp_widget action="INSERT_OR_UPDATE">
+        <category>custom</category>
+        <client_script><![CDATA[function() {  /* widget controller */  var c = this;}]]></client_script>
+        <controller_as>c</controller_as>
+        <css/>
+        <data_table>sp_instance</data_table>
+        <demo_data/>
+        <description/>
+        <docs/>
+        <field_list/>
+        <has_preview>false</has_preview>
+        <id>flatlander-header</id>
+        <internal>false</internal>
+        <link/>
+        <name>Flatlander Header</name>
+        <option_schema/>
+        <public>false</public>
+        <roles/>
+        <script><![CDATA[(function() {  /* populate the 'data' object */  /* e.g., data.table = $sp.getValue('table'); */})();]]></script>
+        <servicenow>false</servicenow>
+        <sys_class_name>sp_widget</sys_class_name>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2018-04-23 03:10:08</sys_created_on>
+        <sys_id>bbc6698fdb695300796cdec0cf961960</sys_id>
+        <sys_mod_count>2</sys_mod_count>
+        <sys_name>Flatlander Header</sys_name>
+        <sys_package display_value="Flatlander Gems SP" source="x_172493_flatgems">a1457f36db655300796cdec0cf96198d</sys_package>
+        <sys_policy/>
+        <sys_scope display_value="Flatlander Gems SP">a1457f36db655300796cdec0cf96198d</sys_scope>
+        <sys_update_name>sp_widget_bbc6698fdb695300796cdec0cf961960</sys_update_name>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2018-04-24 04:03:01</sys_updated_on>
+        <template><![CDATA[<header>
+  <h1 class="text-center">Flatlander Crafted Gems</h1>
+  <h2 class="text-center">– an Angular store –</h2>
+</header>]]></template>
+    </sp_widget>
+</record_update>

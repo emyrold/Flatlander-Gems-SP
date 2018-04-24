@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<record_update table="m2m_sp_dependency_js_include">
+    <m2m_sp_dependency_js_include action="INSERT_OR_UPDATE">
+        <order>100</order>
+        <sp_dependency display_value="storeDependencies">b4c439c7dbe95300796cdec0cf9619f4</sp_dependency>
+        <sp_js_include display_value="storeDirectives">5d61fadbdb659300796cdec0cf9619b9</sp_js_include>
+        <sys_class_name>m2m_sp_dependency_js_include</sys_class_name>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2018-04-24 03:15:28</sys_created_on>
+        <sys_id>6b91f61fdb659300796cdec0cf961953</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_name>storeDependencies.storeDirectives</sys_name>
+        <sys_package display_value="Flatlander Gems SP" source="x_172493_flatgems">a1457f36db655300796cdec0cf96198d</sys_package>
+        <sys_policy/>
+        <sys_scope display_value="Flatlander Gems SP">a1457f36db655300796cdec0cf96198d</sys_scope>
+        <sys_update_name>m2m_sp_dependency_js_include_6b91f61fdb659300796cdec0cf961953</sys_update_name>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2018-04-24 03:15:28</sys_updated_on>
+    </m2m_sp_dependency_js_include>
+</record_update>

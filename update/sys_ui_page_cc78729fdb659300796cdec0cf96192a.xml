@@ -1,0 +1,48 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<record_update table="sys_ui_page">
+    <sys_ui_page action="INSERT_OR_UPDATE">
+        <category>general</category>
+        <client_script/>
+        <description/>
+        <direct>true</direct>
+        <endpoint>x_172493_flatgems_product-tabs.do</endpoint>
+        <html><![CDATA[<section>
+	<ul class="nav nav-pills">
+		<li ng-class="{ active:tab.isSet(1) }">
+			<a href="#" ng-click="tab.setTab(1)">Description</a>
+		</li>
+		<li ng-class="{ active:tab.isSet(2) }">
+			<a href="#" ng-click="tab.setTab(2)">Specs</a>
+		</li>
+		<li ng-class="{ active:tab.isSet(3) }">
+			<a href="#" ng-click="tab.setTab(3)">Reviews</a>
+		</li>
+	</ul>
+
+	<!--  Description Tab's Content  -->
+	<div ng-show="tab.isSet(1)" ng-include="'x_10032_flatlander_descriptions.do'">
+	</div>
+
+	<!--  Spec Tab's Content  -->
+	<div specs="#" ng-show="tab.isSet(2)"></div>
+
+	<!--  Review Tab's Content  -->
+	<reviews ng-show="tab.isSet(3)"></reviews>
+
+</section>]]></html>
+        <name>product-tabs</name>
+        <processing_script/>
+        <sys_class_name>sys_ui_page</sys_class_name>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2018-04-24 03:45:49</sys_created_on>
+        <sys_id>cc78729fdb659300796cdec0cf96192a</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_name>product-tabs</sys_name>
+        <sys_package display_value="Flatlander Gems SP" source="x_172493_flatgems">a1457f36db655300796cdec0cf96198d</sys_package>
+        <sys_policy/>
+        <sys_scope display_value="Flatlander Gems SP">a1457f36db655300796cdec0cf96198d</sys_scope>
+        <sys_update_name>sys_ui_page_cc78729fdb659300796cdec0cf96192a</sys_update_name>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2018-04-24 03:45:49</sys_updated_on>
+    </sys_ui_page>
+</record_update>
