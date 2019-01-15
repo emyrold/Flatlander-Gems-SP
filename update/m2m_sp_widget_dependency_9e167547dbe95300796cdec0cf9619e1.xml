@@ -1,5 +1,4 @@
-<?xml version="1.0" encoding="UTF-8"?>
-<record_update table="m2m_sp_widget_dependency">
+<?xml version="1.0" encoding="UTF-8"?><record_update table="m2m_sp_widget_dependency">
     <m2m_sp_widget_dependency action="INSERT_OR_UPDATE">
         <sp_dependency display_value="storeDependencies">b4c439c7dbe95300796cdec0cf9619f4</sp_dependency>
         <sp_widget display_value="Product Catalog">a3c7e5cfdba95300796cdec0cf961996</sp_widget>
